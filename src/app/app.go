@@ -1,7 +1,10 @@
 package app
 
-import "log"
+import (
+	"golasc/src/api"
+	"golasc/src/appconf"
+)
 
 func Run() {
-	log.Println("Do whatever")
+	api.Run(appconf.Config.Port)
 }
